@@ -1,5 +1,5 @@
 # Proffy-Rocketseat-NLW
-<h3 align="center">Projeto que lida com o agendamento de aulas online.</h3>
+<h3 align="center">Projeto de uma plataforma de estudos online.</h3>
 
 <p align="center"><img src="./Imagens Readme GitHub/imgAppDesktop.png"></p>
 

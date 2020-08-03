@@ -1,6 +1,6 @@
 #page-teacher-list {
-	width: 100vw;
 	height: 100vh;
+	width: 100vw;
 }
 
 #search-teachers {
@@ -24,26 +24,26 @@
 }
 
 #search-teachers .input-block input {
-	width: 100%;
-	height: 5.6rem;
-	margin-top: 0.8rem;
-	border-radius: 0.8rem;
 	background-color: var(--color-input-background);
 	border: 1px solid var(--color-line-in-white);
+	border-radius: 0.8rem;
+	font: 1.6rem Archivo;
+	height: 5.6rem;
+	margin-top: 0.8rem;
 	outline: 0;
 	padding: 0 1.6rem;
-	font: 1.6rem Archivo;
+	width: 100%;
 }
 
 #search-teachers .input-block:focus-within::after {
-	width: calc(100% - 3.2rem);
-	height: 2px;
-	content: '';
 	background-color: var(--color-primary-light);
-	position: absolute;
-	left: 1.6rem;
-	right: 1.6rem;
 	bottom: 0;
+	content: '';
+	height: 2px;
+	left: 1.6rem;
+	position: absolute;
+	right: 1.6rem;
+	width: calc(100% - 3.2rem);
 }
 
 #page-teacher-list main {
@@ -57,11 +57,11 @@
 	}
 	
 	#search-teachers {
+		bottom: -24px;
+		column-gap: 16px;
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		column-gap: 16px;
 		position: absolute;
-		bottom: -24px;
 	}
 	
 	#search-teachers .input-block+.input-block {
@@ -69,8 +69,8 @@
 	}
 	
 	#page-teacher-list main {
-		padding: 3.2rem 0;
-		max-width: 840px;
 		margin: 0 auto;
+		max-width: 840px;
+		padding: 3.2rem 0;
 	}
 }

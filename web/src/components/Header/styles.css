@@ -1,17 +1,17 @@
 .component-header {
+	background-color: var(--color-primary);
 	display: flex;
 	flex-direction: column;
-	background-color: var(--color-primary);
 }
 
 .component-header .top-bar-container {
-	width: 90%;
-	margin: 0 auto;
-	display: flex;
-	justify-content: space-between;
 	align-items: center;
 	color: var(--color-text-in-primary);
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
 	padding: 1.6rem 0;
+	width: 90%;
 }
 
 .component-header .top-bar-container a {
@@ -28,16 +28,15 @@
 }
 
 .component-header .header-content {
-	width: 90%;
-	margin: 0 auto;
-	position: relative;
 	margin: 3.2rem auto;
+	position: relative;
+	width: 90%;
 }
 
 .component-header .header-content strong {
+	color: var(--color-title-in-primary);
 	font: 700 3.6rem Archivo;
 	line-height: 4.2rem;
-	color: var(--color-title-in-primary);
 }
 
 @media (min-width:700px) {
@@ -50,14 +49,14 @@
 	}
 	
 	.component-header .header-content {
-		flex: 1;
-		max-width: 840px;
-		margin: 0 auto;
-		padding-bottom: 40px;
+		align-items: flex-start;
 		display: flex;
+		flex: 1;
 		flex-direction: column;
 		justify-content: center;
-		align-items: flex-start;
+		margin: 0 auto;
+		max-width: 840px;
+		padding-bottom: 40px;
 	}
 	
 	.component-header .header-content strong {

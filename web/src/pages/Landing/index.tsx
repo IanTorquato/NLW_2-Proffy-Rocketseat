@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import './styles.css'
 import imgLogoProffy from '../../assets/images/logo.svg'
@@ -7,7 +8,7 @@ import iconStudy from '../../assets/images/icons/study.svg'
 import iconGiveClasses from '../../assets/images/icons/give-classes.svg'
 import iconPurpleHeart from '../../assets/images/icons/purple-heart.svg'
 
-function Landing() {
+const Landing: React.FC = () => {
   return (
     <div id="page-landing">
       <div id="page-landing-content" className="container">
@@ -19,15 +20,15 @@ function Landing() {
         <img src={imgLanding} alt="Plataforma de estudos" className="hero-image" />
 
         <div className="buttons-container">
-          <a href="#" className="study">
+          <Link to="/study" className="study">
             <img src={iconStudy} alt="Estudar" />
           Estudar
-        </a>
+        </Link>
 
-          <a href="#" className="give-classes">
+          <Link to="/give-classes" className="give-classes">
             <img src={iconGiveClasses} alt="Dar aulas" />
           Dar aulas
-        </a>
+        </Link>
         </div>
 
         <span className="total-connections">

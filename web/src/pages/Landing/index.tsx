@@ -6,6 +6,7 @@ import imgLanding from '../../assets/images/landing.svg'
 import iconStudy from '../../assets/images/icons/study.svg'
 import iconGiveClasses from '../../assets/images/icons/give-classes.svg'
 import iconPurpleHeart from '../../assets/images/icons/purple-heart.svg'
+
 import './styles.css'
 
 const Landing: React.FC = () => {

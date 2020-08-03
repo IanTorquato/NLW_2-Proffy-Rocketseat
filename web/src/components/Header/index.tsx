@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 import imgLogoProffy from '../../assets/images/logo.svg'
 import iconBack from '../../assets/images/icons/back.svg'
+
 import './styles.css'
 
 interface HeaderProps {

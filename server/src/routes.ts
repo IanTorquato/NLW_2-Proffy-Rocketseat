@@ -7,5 +7,6 @@ const classes = new Classes
 const routes = express.Router()
 
 routes.post('/classes', classes.create)
+routes.get('/classes', classes.index)
 
 export default routes 

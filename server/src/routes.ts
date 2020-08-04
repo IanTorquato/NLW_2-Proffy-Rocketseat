@@ -1,12 +1,17 @@
 import express from 'express'
 
-import Classes from './controllers/Classes'
+import ClassesController from './controllers/ClassesController'
+import ConnectionsController from './controllers/ConnectionsController'
 
-const classes = new Classes
+const classesController = new ClassesController
+const connectionsController = new ConnectionsController
 
 const routes = express.Router()
 
-routes.post('/classes', classes.create)
-routes.get('/classes', classes.index)
+routes.post('/classes', classesController.create)
+routes.get('/classes', classesController.index)
+
+routes.post('/connections', connectionsController.create)
+routes.get('/connections', connectionsController.index)
 
 export default routes 

@@ -2,6 +2,8 @@ import React from 'react'
 
 import Header from '../../components/Header'
 import Input from '../../components/Input'
+import Textarea from '../../components/TextArea'
+import Select from '../../components/Select'
 import iconWarning from '../../assets/images/icons/warning.svg'
 
 import './styles.css'
@@ -20,12 +22,20 @@ const TeacherForm: React.FC = () => {
           <Input label="Nome completo" name="name" />
           <Input label="Avatar" name="avatar" />
           <Input label="Whatsapp" name="whatsapp" />
+          <Textarea label="Biografia" name="bio" />
         </fieldset>
 
         <fieldset>
           <legend>Sobre a aula</legend>
 
-          <Input label="Matéria" name="subject" />
+          <Select label="Matéria" name="subject" options={[
+            { value: 'Programação', label: 'Programação' },
+            { value: 'Design', label: 'Design' },
+            { value: 'Redes', label: 'Redes' },
+            { value: 'Hardware', label: 'Hardware' },
+            { value: 'Física Quântica', label: 'Física Quântica' }
+          ]} />
+
           <Input label="Custo da sua hora por aula" name="cost" />
         </fieldset>
 

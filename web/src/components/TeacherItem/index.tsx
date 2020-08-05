@@ -3,33 +3,48 @@ import React from 'react';
 import iconWhatsapp from '../../assets/images/icons/whatsapp.svg'
 
 import './styles.css';
+import api from '../../services/api';
 
-const TeacherItem: React.FC = () => {
+export interface Teacher {
+  avatar: string
+  bio: string
+  cost: number
+  id: number
+  name: string
+  subject: string
+  whatsapp: string
+}
+
+interface TeacherItemProps {
+  dataProffy: Teacher
+}
+
+const TeacherItem: React.FC<TeacherItemProps> = ({ dataProffy }) => {
+  function createNewConnection() {
+    api.post('connections', { user_id: dataProffy.id })
+  }
+
   return (
     <article className="teacher-item">
       <header>
-        <img src="https://avatars3.githubusercontent.com/u/61882248?s=460&u=fbacf3b2ab7fbe9e721081f8774169d9f243fffc&v=4" alt="Ian Torquato" />
+        <img src={dataProffy.avatar} alt={dataProffy.name} />
         <div>
-          <strong>Ian Torquato</strong>
-          <span>Programação</span>
+          <strong>{dataProffy.name}</strong>
+          <span>{dataProffy.subject}</span>
         </div>
       </header>
 
-      <p>
-        Estou interessado em trabalhar com JavaScript em qualquer parte da aplicação. Já tenho uma base de conhecimento com React, React Native e Node.
-      <br /> <br />
-      Busco um local de trabalho onde eu possa ganhar experiência e crescer como programador dentro da empresa, contribuindo para o crescimento da mesma.
-    </p>
+      <p>{dataProffy.bio}</p>
 
       <footer>
         <p>
           Preço/hora
-        <strong>R$ 50,00</strong>
+        <strong>R$ {dataProffy.cost}</strong>
         </p>
-        <button type="button">
-          <img src={iconWhatsapp} alt="Icon Whatsapp" />
-        Entrar em contato
-        </button>
+        <a href={`https://wa.me/${dataProffy.whatsapp}`} target="_blank" rel="noopener noreferrer"
+          onClick={createNewConnection}>
+          <img src={iconWhatsapp} alt="Icon Whatsapp" /> Entrar em contato
+        </a>
       </footer>
     </article>
   )

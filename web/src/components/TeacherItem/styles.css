@@ -56,7 +56,7 @@
 	font-size: 1.6rem;
 }
 
-.teacher-item footer button {
+.teacher-item footer a {
 	align-items: center;
 	background-color: var(--color-secundary);
 	border: 0;
@@ -67,11 +67,12 @@
 	font: 700 1.4rem Archivo;
 	height: 5.6rem;
 	justify-content: space-evenly;
+	text-decoration: none;
 	transition: background-color 0.2s;
 	width: 20rem;
 }
 
-.teacher-item footer button:hover {
+.teacher-item footer a:hover {
 	background-color: var(--color-secundary-dark);
 }
 
@@ -91,13 +92,13 @@
 		margin-left: 1.6rem;
 	}
 	
-	.teacher-item footer button {
+	.teacher-item footer a {
 		font-size: 1.6rem;
 		justify-content: center;
 		width: 24.5rem;
 	}
 	
-	.teacher-item footer button img {
+	.teacher-item footer a img {
 		margin-right: 1.6rem;
 	}
 }

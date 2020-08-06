@@ -12,6 +12,10 @@ import iconHeart from '../../assets/images/icons/heart.png'
 const Landing: React.FC = () => {
   const { navigate } = useNavigation()
 
+  function handleNavigateToStudyTabs() {
+    navigate('StudyTabs')
+  }
+
   function handleNavigateToGiveClasses() {
     navigate('GiveClasses')
   }
@@ -27,7 +31,7 @@ const Landing: React.FC = () => {
         </Text>
 
         <View style={styles.buttonsContainer}>
-          <RectButton style={[styles.button, styles.buttonSecondary]}>
+          <RectButton style={[styles.button, styles.buttonSecondary]} onPress={handleNavigateToStudyTabs}>
             <Image source={iconStudy} />
             <Text style={styles.buttonText}>Estudar</Text>
           </RectButton>

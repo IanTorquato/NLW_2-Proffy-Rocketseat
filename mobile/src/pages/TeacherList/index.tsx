@@ -7,6 +7,7 @@ import Header from '../../components/Header'
 const TeacherList: React.FC = () => {
   return (
     <View style={styles.container}>
+      <Header title="Proffys dispiníveis" />
     </View>
   )
 }

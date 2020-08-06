@@ -7,6 +7,7 @@ import Header from '../../components/Header'
 const Favorites: React.FC = () => {
   return (
     <View style={styles.container}>
+      <Header title="Meus proffys favoritos" />
     </View>
   )
 }

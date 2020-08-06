@@ -5,11 +5,11 @@
 <p align="center">
   <img alt="Tamanho do repositório" src="https://img.shields.io/github/repo-size/IanTorquato/Proffy-Rocketseat-NLW">
   
-  <a href="https://www.instagram.com/ian_1408/">
+  <a href="https://www.instagram.com/ian_1408/" target="_blank">
     <img alt="Feito por Ian Torquato" src="https://img.shields.io/badge/made%20by-Ian%20Torquato-%2304D361">
   </a>
   
-  <a href="https://github.com/IanTorquato/Proffy-Rocketseat-NLW/search?l=typescript">
+  <a href="https://github.com/IanTorquato/Proffy-Rocketseat-NLW/search?l=typescript" target="_blank">
     <img alt="Quantidade de linguagens" src="https://img.shields.io/github/languages/count/IanTorquato/Proffy-Rocketseat-NLW">
   </a>
   

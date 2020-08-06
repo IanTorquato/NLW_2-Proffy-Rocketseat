@@ -1,21 +1,21 @@
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
 import { StatusBar } from 'expo-status-bar'
+import { AppLoading } from 'expo'
+import { useFonts, Archivo_400Regular, Archivo_700Bold } from '@expo-google-fonts/archivo'
+import { Poppins_400Regular, Poppins_600SemiBold } from '@expo-google-fonts/poppins'
+
+import AppStack from './src/routes/AppStack'
 
 export default function App() {
+  let [fontsLoaded] = useFonts({ Archivo_400Regular, Archivo_700Bold, Poppins_400Regular, Poppins_600SemiBold })
+
+  if (!fontsLoaded) {
+    return <AppLoading />
+  }
   return (
-    <View style={styles.container}>
-      <StatusBar style="light" />
-      <Text>Hellow Dev</Text>
-    </View>
+    <>
+      <AppStack />
+      <StatusBar style="light" backgroundColor="#8257e5" />
+    </>
   )
 }
-
-const styles = StyleSheet.create({
-  container: {
-    alignItems: 'center',
-    backgroundColor: '#8257E5',
-    flex: 1,
-    justifyContent: 'center'
-  }
-})

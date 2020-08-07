@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
     flex: 1
   },
   scrollTeacherList: {
-    marginTop: -64
+    marginTop: -40
   }
 })
 

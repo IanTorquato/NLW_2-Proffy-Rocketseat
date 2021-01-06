@@ -1,9 +1,6 @@
 yarn.lock
+node_modules
 
-server/node_modules
 server/src/database/database.sqlite
 
-web/node_modules
-
-mobile/node_modules
 mobile/.expo*

@@ -35,13 +35,13 @@ const Landing: React.FC = () => {
         <div className="buttons-container">
           <Link to="/study" className="study">
             <img src={iconStudy} alt="Estudar" />
-          Estudar
-        </Link>
+            Estudar
+          </Link>
 
           <Link to="/give-classes" className="give-classes">
             <img src={iconGiveClasses} alt="Dar aulas" />
-          Dar aulas
-        </Link>
+            Dar aulas
+          </Link>
         </div>
 
         <span className="total-connections">

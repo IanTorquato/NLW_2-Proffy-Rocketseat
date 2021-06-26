@@ -20,4 +20,4 @@ const AppStack: React.FC = () => {
   )
 }
 
-export default AppStack 
+export default AppStack

@@ -1,9 +1,9 @@
-import React from 'react';
+import React from 'react'
 
 import iconWhatsapp from '../../assets/images/icons/whatsapp.svg'
 
-import './styles.css';
-import api from '../../services/api';
+import './styles.css'
+import api from '../../services/api'
 
 export interface Teacher {
   avatar: string
@@ -39,7 +39,7 @@ const TeacherItem: React.FC<TeacherItemProps> = ({ dataProffy }) => {
       <footer>
         <p>
           Preço/hora
-        <strong>R$ {dataProffy.cost}</strong>
+          <strong>R$ {dataProffy.cost}</strong>
         </p>
         <a href={`https://wa.me/${dataProffy.whatsapp}`} target="_blank" rel="noopener noreferrer"
           onClick={createNewConnection}>
@@ -50,4 +50,4 @@ const TeacherItem: React.FC<TeacherItemProps> = ({ dataProffy }) => {
   )
 }
 
-export default TeacherItem;
+export default TeacherItem

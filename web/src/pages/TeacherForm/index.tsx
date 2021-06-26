@@ -86,7 +86,7 @@ const TeacherForm: React.FC = () => {
           <fieldset>
             <legend>
               Horários disponíveis
-            <button type="button" onClick={addNewScheduleItem}>+ Novo horário</button>
+              <button type="button" onClick={addNewScheduleItem}>+ Novo horário</button>
             </legend>
 
             {scheduleItems.map((scheduleItem, position) => (
@@ -114,7 +114,7 @@ const TeacherForm: React.FC = () => {
           <footer>
             <p>
               <img src={iconWarning} alt="Aviso Importante" />
-            Importante! <br /> Preencha todos os dados
+              Importante! <br /> Preencha todos os dados
             </p>
 
             <button type="submit">Salvar cadastro</button>

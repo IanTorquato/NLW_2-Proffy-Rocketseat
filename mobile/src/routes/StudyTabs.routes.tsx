@@ -51,4 +51,4 @@ const StudyTabs: React.FC = () => {
   )
 }
 
-export default StudyTabs 
+export default StudyTabs

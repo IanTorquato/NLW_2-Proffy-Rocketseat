@@ -1,20 +1,26 @@
 {
-	"expo": {
-		"assetBundlePatterns": ["**/*"],
-		"backgroundColor": "#8257E5",
-		"githubUrl": "https://github.com/IanTorquato",
-		"icon": "./assets/icon.png",
-		"name": "Proffy",
-		"orientation": "portrait",
-		"platforms": ["android"],
-		"primaryColor": "#000000",
-		"slug": "NLW_02",
-		"splash": {
-			"backgroundColor": "#ffffff",
-			"image": "./assets/splash.png",
-			"resizeMode": "contain"
-		},
-		"updates": { "fallbackToCacheTimeout": 0 },
-		"version": "1.0.0"
-	}
+  "expo": {
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "backgroundColor": "#8257E5",
+    "githubUrl": "https://github.com/IanTorquato",
+    "icon": "./assets/icon.png",
+    "name": "Proffy",
+    "orientation": "portrait",
+    "platforms": [
+      "android"
+    ],
+    "primaryColor": "#000000",
+    "slug": "NLW_02",
+    "splash": {
+      "backgroundColor": "#ffffff",
+      "image": "./assets/splash.png",
+      "resizeMode": "contain"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "version": "1.0.0"
+  }
 }
